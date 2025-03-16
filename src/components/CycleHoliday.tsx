@@ -8,14 +8,14 @@ export function CycleHoliday(): React.JSX.Element {
         "🎄": "🐰",
         "🐰": "🎆",
         "🎆": "🦃",
-        "🦃": "❄️"
+        "🦃": "❄️",
     };
     const YEAR: Record<Holiday, Holiday> = {
         "🎆": "❄️",
         "❄️": "🐰",
         "🐰": "🦃",
         "🦃": "🎄",
-        "🎄": "🎆"
+        "🎄": "🎆",
     };
     const [holiday, setHoliday] = useState<Holiday>("❄️");
     return (

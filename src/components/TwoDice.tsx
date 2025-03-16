@@ -41,13 +41,11 @@ export function TwoDice(): React.JSX.Element {
                 </Button>
             </div>
             <div>
-                {leftDie === rightDie && leftDie === 1 ? (
+                {leftDie === rightDie && leftDie === 1 ?
                     <span>Lose</span>
-                ) : leftDie === rightDie ? (
+                : leftDie === rightDie ?
                     <span>Win</span>
-                ) : (
-                    <span>Roll Again</span>
-                )}
+                :   <span>Roll Again</span>}
             </div>
         </div>
     );
